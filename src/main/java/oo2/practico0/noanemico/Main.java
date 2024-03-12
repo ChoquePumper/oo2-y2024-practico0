@@ -6,5 +6,8 @@ public class Main {
         Tiempo tiempo = new Tiempo();
         System.out.println(tiempo.formatoLargo());
         System.out.println(tiempo.formatoCorto());
+        Tiempo otrotiempo = new Tiempo(23, 05, 2023, 15, 25, 17);
+        System.out.println(otrotiempo.formatoLargo());
+        System.out.println(otrotiempo.formatoCorto());
     }
 }

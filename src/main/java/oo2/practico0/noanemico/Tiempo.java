@@ -44,10 +44,18 @@ public class Tiempo {
         }
     }
 
+    /**
+     * Devuelve la fecha y hora como texto en formato largo.
+     * Ejemplo: {@code martes, 12 de marzo de 2024, 16:55:55}
+     */
     public String formatoLargo() {
         return crearLocalDateTime().format(DateTimeFormatter.ofPattern("EEEE, d 'de' MMMM 'de' uuuu, HH:mm:ss"));
     }
 
+    /**
+     * Devuelve la fecha y hora como texto en formato corto.
+     * Ejemplo: {@code 12/03/2024 16:55}
+     */
     public String formatoCorto() {
         // return crearLocalDate().format( DateTimeFormatter.ofPattern("dd/MM/uuuu") );
         return String.format("%02d/%02d/%04d %02d:%02d", dia, mes, año, hora, minuto);
